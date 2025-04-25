@@ -38,18 +38,24 @@
         <ul>
           <li><strong>Allowed Guest QR Code</strong></li>
           <li>Scan the following QR code to simulate an allowed guest (they will be on the guest list):</li>
-          <!-- Allowed Guest QR Code -->
-          <div class="qr-code" id="allowed-qr-code">
-            <img src="images/002_Sarah_Ibrahim.png" alt="Allowed Guest QR Code" />
-          </div>
           
+          <!-- QR Code Container (This will align the QR codes side by side) -->
+          <div class="qr-code-container">
+            <!-- Allowed Guest QR Code -->
+            <div class="qr-code" id="allowed-qr-code">
+              <img src="images/002_Sarah_Ibrahim.png" alt="Allowed Guest QR Code" />
+            </div>
+            
+            <!-- Not Allowed Guest QR Code -->
+            <div class="qr-code" id="not-allowed-qr-code">
+              <img src="images/004_John_Doe.png" alt="Not Allowed Guest QR Code" />
+            </div>
+          </div>
+        
           <li><strong>Not Allowed Guest QR Code</strong></li>
           <li>Scan the following QR code to simulate a not-allowed guest (they will NOT be on the guest list):</li>
-          <!-- Not Allowed Guest QR Code -->
-          <div class="qr-code" id="not-allowed-qr-code">
-            <img src="images/004_John_Doe.png" alt="Not Allowed Guest QR Code" />
-          </div>
         </ul>
+        
         
         <p><strong>Scan the demo QR codes above to see how the app handles both allowed and not-allowed guests. If you would like to try the app yourself, click the link below:</strong></p>
         
