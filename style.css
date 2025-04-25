@@ -36,4 +36,39 @@ body {
     background: #222;
     color: white;
   }
-  
+  /* Style for Project Card */
+.project-card {
+  margin-bottom: 30px;
+}
+
+/* Button to Toggle Project Details */
+.try-now-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.try-now-button:hover {
+  background-color: #45a049;
+}
+
+
+.project-details {
+  display: none; 
+  margin-top: 20px;
+  text-align: left;
+}
+
+
+#demo-qr-code img {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  display: block;
+}
