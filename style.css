@@ -72,3 +72,14 @@ body {
   margin: 20px auto;
   display: block;
 }
+.qr-code {
+  display: flex;
+  justify-content: center; /* Centers the QR code */
+  margin: 20px 0; /* Adds margin around each QR code */
+}
+
+.qr-code img {
+  width: 150px; /* Sets the width of the QR code */
+  height: 150px; /* Sets the height of the QR code */
+  object-fit: contain; /* Ensures the image maintains its aspect ratio */
+}
