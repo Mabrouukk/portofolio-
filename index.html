@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <h1>Mabrouk Ahmed Mabrouk</h1>
+    <h1>Mabrouk  Mabrouk</h1>
     <p>Computer Engineering Student | Web Developer</p>
   </header>
 
@@ -27,24 +27,36 @@
       
       <!-- Button to Toggle Project Details -->
       <button onclick="toggleDetails()" class="try-now-button">See Project Details</button>
-
+    
       <!-- Project Details (Initially Hidden) -->
       <div class="project-details" id="project-details">
         <p>The process involves scanning the QR code and verifying if the person is on the guest list. It's an easy and efficient way to check guests at the entrance.</p>
-
-        <h4>Demo QR Code</h4>
-        <p>Below is a demo QR code that you can scan. The app will recognize it as a valid guest entry:</p>
+    
+        <h4>Demo QR Codes</h4>
+        <p>Below are two demo QR codes:</p>
         
-        <!-- Demo QR Code -->
-        <div id="demo-qr-code">
-          <img src="images/004_John_Doe.png" alt="Demo QR Code" />
-        </div>
-
-        <p><strong>Scan the demo QR code above to see the functionality of the QR Code Wedding Guest Checker. If you would like to try the app yourself, click the link below:</strong></p>
+        <ul>
+          <li><strong>Allowed Guest QR Code</strong></li>
+          <li>Scan the following QR code to simulate an allowed guest (they will be on the guest list):</li>
+          <!-- Allowed Guest QR Code -->
+          <div id="allowed-qr-code">
+            <img src="images/allowed_guest_qr.png" alt="Allowed Guest QR Code" />
+          </div>
+          
+          <li><strong>Not Allowed Guest QR Code</strong></li>
+          <li>Scan the following QR code to simulate a not-allowed guest (they will NOT be on the guest list):</li>
+          <!-- Not Allowed Guest QR Code -->
+          <div id="not-allowed-qr-code">
+            <img src="images/not_allowed_guest_qr.png" alt="Not Allowed Guest QR Code" />
+          </div>
+        </ul>
+    
+        <p><strong>Scan the demo QR codes above to see how the app handles both allowed and not-allowed guests. If you would like to try the app yourself, click the link below:</strong></p>
         
         <a href="projects/qr-wedding-checker/index.html" target="_blank" class="try-now-button">Try the Project</a>
       </div>
     </div>
+    
 
     <!-- Add more projects here -->
 
