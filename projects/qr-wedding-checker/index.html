@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QR Check-In</title>
+  <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin: 20px; }
+    #result { font-size: 20px; font-weight: bold; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h2>QR Check-In</h2>
+  <div id="reader" style="width: 300px; margin: auto;"></div>
+  <div id="result">Scan a QR code...</div>
+
+  <script>
+  const allowedGuests = {
+  "001": { name: "Ahmed Ali", seat: "Table 1, Seat 3" },
+  "002": { name: "Sarah Ibrahim", seat: "Table 2, Seat 1" },
+  "003": { name: "Mabrouk Guest", seat: "VIP Table, Seat 1" }
+};
+
+
+function onScanSuccess(decodedText, decodedResult) {
+  const resultEl = document.getElementById('result');
+  const [guestId, guestName] = decodedText.split(":");
+
+  const guest = allowedGuests[guestId];
+
+  if (guest && guest.name === guestName) {
+    resultEl.innerHTML = `✅ Welcome, ${guest.name}!<br/>🪑 Your seat: ${guest.seat}`;
+    resultEl.style.color = "green";
+  } else {
+    resultEl.innerHTML = `❌ Not on guest list: ${decodedText}`;
+    resultEl.style.color = "red";
+  }
+}
+
+
+  const html5QrCode = new Html5Qrcode("reader");
+  html5QrCode.start(
+    { facingMode: "environment" },
+    { fps: 10, qrbox: 250 },
+    onScanSuccess
+  );
+</script>
+
+  
+</body>
+</html>
