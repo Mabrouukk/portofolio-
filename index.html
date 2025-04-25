@@ -23,19 +23,27 @@
     <!-- Project: QR Code Wedding Guest Checker -->
     <div class="project-card">
       <h3>QR Code Wedding Guest Checker</h3>
-      <p>This app scans guest QR codes to validate if they are invited to a wedding. The process involves scanning the QR code and verifying if the person is on the guest list. It's an easy and efficient way to check guests at the entrance.</p>
-
-      <h4>Demo QR Code</h4>
-      <p>Below is a demo QR code that you can scan. The app will recognize it as a valid guest entry:</p>
+      <p>This app scans guest QR codes to validate if they are invited to a wedding.</p>
       
-      <!-- Demo QR Code -->
-      <div id="demo-qr-code" style="margin: 20px;">
-        <img src="path_to_your_demo_qr_code.png" alt="Demo QR Code" style="width: 200px; height: 200px;" />
+      <!-- Button to Toggle Project Details -->
+      <button onclick="toggleDetails()" class="try-now-button">See Project Details</button>
+
+      <!-- Project Details (Initially Hidden) -->
+      <div class="project-details" id="project-details">
+        <p>The process involves scanning the QR code and verifying if the person is on the guest list. It's an easy and efficient way to check guests at the entrance.</p>
+
+        <h4>Demo QR Code</h4>
+        <p>Below is a demo QR code that you can scan. The app will recognize it as a valid guest entry:</p>
+        
+        <!-- Demo QR Code -->
+        <div id="demo-qr-code">
+          <img src="path_to_your_demo_qr_code.png" alt="Demo QR Code" />
+        </div>
+
+        <p><strong>Scan the demo QR code above to see the functionality of the QR Code Wedding Guest Checker. If you would like to try the app yourself, click the link below:</strong></p>
+        
+        <a href="projects/qr-wedding-checker/index.html" target="_blank" class="try-now-button">Try the Project</a>
       </div>
-
-      <p><strong>Scan the demo QR code above to see the functionality of the QR Code Wedding Guest Checker. If you would like to try the app yourself, click the link below:</strong></p>
-      
-      <a href="projects/qr-wedding-checker/index.html" target="_blank" class="try-now-button">Try the Project</a>
     </div>
 
     <!-- Add more projects here -->
@@ -45,6 +53,18 @@
   <footer>
     <p>&copy; 2025 Mabrouk. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Function to toggle the visibility of the project details
+    function toggleDetails() {
+      const details = document.getElementById("project-details");
+      if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block"; // Show details
+      } else {
+        details.style.display = "none"; // Hide details
+      }
+    }
+  </script>
 
 </body>
 </html>
