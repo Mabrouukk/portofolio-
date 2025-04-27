@@ -8,7 +8,7 @@ body {
   }
   
   header {
-    background: #0077cc;
+    background: black;
     color: white;
     padding: 20px;
     text-align: center;
@@ -22,11 +22,11 @@ body {
     background: white;
     padding: 15px;
     margin: 10px 0;
-    border-left: 5px solid #0077cc;
+    border-left: 5px solid black;
   }
   
   a {
-    color: #0077cc;
+    color: black;
     text-decoration: none;
   }
   
