@@ -83,3 +83,11 @@ body {
   height: 150px; /* Sets the height of the QR code */
   object-fit: contain; /* Ensures the image maintains its aspect ratio */
 }
+.about-content {
+  max-width: 800px; /* Makes the content not stretch too much */
+  margin: 0 auto;   /* Centers it horizontally */
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
