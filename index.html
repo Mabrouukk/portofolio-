@@ -52,7 +52,9 @@
       <p>This app scans guest QR codes to validate if they are invited or not .</p>
       
       <!-- Button to Toggle Project Details -->
-      <button onclick="toggleDetails()" class="try-now-button">See Project Details</button>
+      <!-- Button to Toggle Project Details -->
+<button onclick="toggleDetails('project-details')" class="try-now-button">See Project Details</button>
+
     
       <!-- Project Details (Initially Hidden) -->
       <div class="project-details" id="project-details">
@@ -88,10 +90,25 @@
 
     <div class="project-card">
       <h3>Password Manager</h3>
-      <p>A secure web-based application that allows users to register, log in, and manage their saved passwords for different accounts using a protected backend.</p>
-      
-      <!-- Button to Open the Project -->
-      <a href="D:\WORK2\portofolio-\projects\qr-wedding-checker\password-manager\index.html" target="_blank" class="try-now-button">Try the Project</a>
+      <p>A secure web-based application that allows users to register, log in, and manage their saved passwords for different accounts.</p>
+    
+      <!-- Toggle Button -->
+      <button onclick="toggleDetails('password-project-details')" class="try-now-button">See Project Details</button>
+    
+      <!-- Project Details -->
+      <div class="project-details" id="password-project-details">
+        <p><strong>Project Description:</strong> This web app enables user authentication, session-based access, and secure password storage using a backend database.</p>
+    
+        <p><strong>Technologies Used:</strong></p>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Node.js & Express.js</li>
+          <li>MongoDB (via Mongoose)</li>
+        </ul>
+    
+        <!-- Link to Try Project -->
+        <a href="D:/WORK2/portofolio-/projects/qr-wedding-checker/password-manager/index.html" target="_blank" class="try-now-button">Try the Project</a>
+      </div>
     </div>
     
 
@@ -104,15 +121,15 @@
   </footer>
 
   <script>
-    // Function to toggle the visibility of the project details
-    function toggleDetails() {
-      const details = document.getElementById("project-details");
-      if (details.style.display === "none" || details.style.display === "") {
-        details.style.display = "block"; // Show details
-      } else {
-        details.style.display = "none"; // Hide details
-      }
+  function toggleDetails(id) {
+    const details = document.getElementById(id);
+    if (details.style.display === "none" || details.style.display === "") {
+      details.style.display = "block";
+    } else {
+      details.style.display = "none";
     }
+  }
+</script>
   </script>
 
 </body>
