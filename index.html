@@ -18,8 +18,7 @@
       <p>Computer engineering student at GUC, pursuing a double degree at GIU Berlin. Skilled in web development (HTML, CSS, JavaScript),
         programming (Java, Python), databases, and networks. Gained hands-on IT operations experience at AAIB Bank, focusing on
         cybersecurity, network configuration, and database management. Passionate about system design, problem-solving, and software
-        development.
-          </p>
+        development.</p>
     </div>
   </section>
 
@@ -27,63 +26,56 @@
     <h2>Education</h2>
     <div class="education-content">
       <div class="education-item">
-        <h3>🎓German International University In Berlin (GIU)</h3>
+        <h3>🎓 German International University In Berlin (GIU)</h3>
         <p>Double Degree</p>
         <p>2024-2026</p>
-        <h3>🎓German University in Cairo (GUC)</h3>
+        <h3>🎓 German University in Cairo (GUC)</h3>
         <p>Bachelor of Science in Computer Engineering</p>
         <p>2022-2027</p>
-        <h3>🎓Egypt British International School</h3>
+        <h3>🎓 Egypt British International School</h3>
         <p>IGCSE</p>
         <p>2020-2022</p>
       </div>
-  
-      <!-- You can add more education items if needed -->
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>💼Job Experience</h2>
+    <div class="experience-content">
+      <div class="experience-item">
+        <h3>IT Operations Intern - Arab African International Bank (AAIB)</h3>
+        <p><strong>July 2024 (Full-time Internship)</strong></p>
+        <ul>
+          <li>Worked in a professional IT environment from 9 AM to 5 PM, 5 days a week.</li>
+          <li>Gained hands-on experience in cybersecurity, networks, application support, and infrastructure.</li>
+          <li>Learned core and non-core banking systems, SQL databases, WebSphere, and Elasticsearch.</li>
+          <li>Queried application logs and supported backend systems using Node.js & Visual Studio.</li>
+          <li>Used PuTTY for configuring and troubleshooting routers and switches in the bank’s network.</li>
+        </ul>
+      </div>
     </div>
   </section>
   
 
   <section id="projects">
-    <h2>Projects</h2>
-    
-    <!-- Project: QR Code Wedding Guest Checker -->
+    <h2>🛠Projects</h2>
     <div class="project-card">
       <h3>QR Code Guest Checker</h3>
-      <p>This app scans guest QR codes to validate if they are invited or not .</p>
-      
-      <!-- Button to Toggle Project Details -->
-      <!-- Button to Toggle Project Details -->
-<button onclick="toggleDetails('project-details')" class="try-now-button">See Project Details</button>
-
-    
-      <!-- Project Details (Initially Hidden) -->
+      <p>This app scans guest QR codes to validate if they are invited or not.</p>
+      <button onclick="toggleDetails('project-details')" class="try-now-button">See Project Details</button>
       <div class="project-details" id="project-details">
         <p>The process involves scanning the QR code and verifying if the person is on the guest list. It's an easy and efficient way to check guests at the entrance.</p>
-    
         <h4>Demo QR Codes</h4>
         <p>Below are two demo QR codes:</p>
-        
         <ul>
           <li><strong>1st QR Code is Allowed Guest</strong></li>
           <li><strong>2nd QR Code is Not Allowed Guest</strong></li>
-          
-          <!-- QR Code Container (This will align the QR codes side by side) -->
           <div class="qr-code-container">
-            <!-- Allowed Guest QR Code -->
-            <div class="qr-code" id="allowed-qr-code">
-              <img src="images/002_Sarah_Ibrahim.png" alt="Allowed Guest QR Code" />
-            </div>
-            
-            <!-- Not Allowed Guest QR Code -->
-            <div class="qr-code" id="not-allowed-qr-code">
-              <img src="images/004_John_Doe.png" alt="Not Allowed Guest QR Code" />
-            </div>
+            <div class="qr-code"><img src="images/002_Sarah_Ibrahim.png" alt="Allowed Guest QR Code" /></div>
+            <div class="qr-code"><img src="images/004_John_Doe.png" alt="Not Allowed Guest QR Code" /></div>
           </div>
         </ul>
-        
-        
         <p><strong>Scan the demo QR codes above to see how the app handles both allowed and not-allowed guests. If you would like to try the app yourself, click the link below:</strong></p>
-        
         <a href="projects/qr-wedding-checker/index.html" target="_blank" class="try-now-button">Try the Project</a>
       </div>
     </div>
@@ -91,48 +83,46 @@
     <div class="project-card">
       <h3>Password Manager</h3>
       <p>A secure web-based application that allows users to register, log in, and manage their saved passwords for different accounts.</p>
-    
-      <!-- Toggle Button -->
       <button onclick="toggleDetails('password-project-details')" class="try-now-button">See Project Details</button>
-    
-      <!-- Project Details -->
       <div class="project-details" id="password-project-details">
         <p><strong>Project Description:</strong> This web app enables user authentication, session-based access, and secure password storage using a backend database.</p>
-    
         <p><strong>Technologies Used:</strong></p>
         <ul>
           <li>HTML, CSS, JavaScript</li>
           <li>Node.js & Express.js</li>
           <li>MongoDB (via Mongoose)</li>
         </ul>
-    
-        <!-- Link to Try Project -->
         <a href="projects/qr-wedding-checker/password-manager/index.html" target="_blank" class="try-now-button">Try the Project</a>
-
-
       </div>
     </div>
-    
+  </section>
 
-    <!-- Add more projects here -->
-
+  <section id="contact">
+    <h2>📞Contact</h2>
+    <div class="contact-content">
+      <p><strong>✉:</strong>mahmoudghobashy1202@gmail.com</p>
+      <p><strong>✆:</strong> +49 017658818110 / +20 01013666610</p>
+      <p><strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/mahmoud-mabrouk-9a95b0212" target="_blank">
+          www.linkedin.com/in/mahmoud-mabrouk-9a95b0212
+        </a>
+      </p>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Mabrouk. All rights reserved.</p>
+    <p>&copy; 2025 Mabrouk. All rights reserved.</p>  
   </footer>
 
   <script>
-  function toggleDetails(id) {
-    const details = document.getElementById(id);
-    if (details.style.display === "none" || details.style.display === "") {
-      details.style.display = "block";
-    } else {
-      details.style.display = "none";
+    function toggleDetails(id) {
+      const details = document.getElementById(id);
+      if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block";
+      } else {
+        details.style.display = "none";
+      }
     }
-  }
-</script>
   </script>
-
 </body>
 </html>
