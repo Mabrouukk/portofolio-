@@ -146,3 +146,47 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
+/* Two-column layout for Education and Experience */
+.two-column-layout {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.education-column, .experience-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.education-column h2, .experience-column h2 {
+  text-align: left;
+}
+.experience-item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.experience-item h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.experience-item p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.experience-item ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+
+.experience-item li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
