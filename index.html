@@ -67,16 +67,16 @@
     </div>
   </section>
 
-  
   <section id="projects">
-
     <div class="container">
       <h2>🛠 Projects</h2>
+      
+      <!-- QR Code Guest Checker Project -->
       <div class="project-card">
         <h3>QR Code Guest Checker</h3>
         <p>This app scans guest QR codes to validate if they are invited or not.</p>
-        <button onclick="toggleDetails('project-details')" class="try-now-button">See Project Details</button>
-        <div class="project-details" id="project-details">
+        <button onclick="toggleDetails('project-details-qr')" class="try-now-button">See Project Details</button>
+        <div class="project-details" id="project-details-qr" style="display: none;">
           <p>The process involves scanning the QR code and verifying if the person is on the guest list. It's an easy and efficient way to check guests at the entrance.</p>
           <h4>Demo QR Codes</h4>
           <p>Below are two demo QR codes:</p>
@@ -88,38 +88,39 @@
           <a href="https://mabrouukk.github.io/checker/" target="_blank" class="try-now-button">Try the Project</a>
         </div>
       </div>
+      
+      <!-- Blog Web Application Project -->
       <div class="project-card">
         <h3>📝 Blog Web Application</h3>
         <p>This is a front-end web application that simulates a blogging platform where users can create, view, and delete posts. It focuses on layout, user interaction, and responsiveness using only front-end technologies.</p>
-      
-        <div class="portfolio-media">
-          <img src="./images/image.png" alt="Blog App Homepage Screenshot" style="max-width: 100%; border-radius: 10px; margin-bottom: 1rem;">
-          
-          <video controls width="100%" style="border-radius: 10px;">
-            <source src="videos/blog_demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+        <button onclick="toggleDetails('project-details-blog')" class="try-now-button">See Project Details</button>
+        <div class="project-details" id="project-details-blog" style="display: none;">
+          <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 1rem;">
+            <img src="./images/Capture 1.PNG" alt="Blog App Homepage Screenshot" style="max-width: 50%; border-radius: 10px;">
+          </div>
+          <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+            <video controls width="75%" style="border-radius: 10px;">
+              <source src="images/here.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p><strong>Key Features:</strong></p>
+          <ul>
+            <li>Interactive user interface with post creation and deletion.</li>
+            <li>Styled using HTML, CSS, and vanilla JavaScript.</li>
+            <li>Fully responsive design optimized for desktop and mobile screens.</li>
+            <li>Data is stored temporarily in-memory during runtime (no database used).</li>
+          </ul>
+          <p><strong>Status:</strong> This project is currently in local development. Demo images and video walkthroughs are available above.</p>
         </div>
-      
-        <p><strong>Key Features:</strong></p>
-        <ul>
-          <li>Interactive user interface with post creation and deletion.</li>
-          <li>Styled using HTML, CSS, and vanilla JavaScript.</li>
-          <li>Fully responsive design optimized for desktop and mobile screens.</li>
-          <li>Data is stored temporarily in-memory during runtime (no database used).</li>
-        </ul>
-      
-        <p><strong>Status:</strong> This project is currently in local development. Demo images and video walkthroughs are available above.</p>
-      
-        <a href="https://github.com/mabrouukk/blog-app" target="_blank" class="try-now-button">View on GitHub</a>
       </div>
       
-
+      <!-- Password Manager Project -->
       <div class="project-card">
         <h3>Password Manager</h3>
         <p>A secure web-based application that allows users to register, log in, and manage their saved passwords for different accounts.</p>
-        <button onclick="toggleDetails('password-project-details')" class="try-now-button">See Project Details</button>
-        <div class="project-details" id="password-project-details">
+        <button onclick="toggleDetails('project-details-password')" class="try-now-button">See Project Details</button>
+        <div class="project-details" id="project-details-password" style="display: none;">
           <p><strong>Project Description:</strong> This web app enables user authentication, session-based access, and secure password storage using a backend database.</p>
           <p><strong>Technologies Used:</strong></p>
           <ul>
@@ -130,6 +131,7 @@
           <a href="https://mabrouukk.github.io/password-manager/" target="_blank" class="try-now-button">Try the Project</a>
         </div>
       </div>
+
     </div>
   </section>
 
