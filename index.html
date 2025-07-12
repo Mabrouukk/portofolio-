@@ -70,110 +70,110 @@
   <section id="projects">
     <div class="container">
   <h2>🛠 Projects</h2>
-  <div class="project-card">
-    <h3>Family Photo Album</h3>
-    <p>
-      I built a full-stack Family Photo Album web app using Node.js, Express.js, and PostgreSQL. This project allows family members to register, log in, upload photos (from camera or files), add captions, and delete images. Each user has their own gallery. The app includes session-based authentication and secure backend operations.
-      I used EJS templating and Bootstrap for a responsive and clean UI, demonstrating my skills in user authentication, RESTful routing, secure file handling with Multer, and PostgreSQL integration.
-    </p>
-    <button onclick="toggleDetails('project-details-photo')" class="try-now-button">See Project Details</button>
-    <div class="project-details" id="project-details-photo" style="display: none;">
-      <p><strong>Project Description:</strong> A secure and private photo-sharing platform for families with authentication, captioning, image deletion, and uploads directly from the camera.</p>
-      <p><strong>Technologies Used:</strong></p>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Node.js, Express.js, EJS</li>
-        <li>PostgreSQL, Multer, bcrypt, Express-session</li>
-        <li>Bootstrap 5 for styling</li>
-      </ul>
-      <a href="https://family-photo-app.onrender.com" target="_blank" class="try-now-button">Try the Project</a>
+  <!-- Corrections applied: unique IDs for each project details section and matching button onclicks. Also fixed extra closing </div> after Family Photo Album. -->
+
+<section id="projects">
+  <div class="container">
+    <h2>🛠 Projects</h2>
+
+    <div class="project-card">
+      <h3>Family Photo Album</h3>
+      <p>
+        I built a full-stack Family Photo Album web app using Node.js, Express.js, and PostgreSQL. This project allows family members to register, log in, upload photos (from camera or files), add captions, and delete images. Each user has their own gallery. The app includes session-based authentication and secure backend operations.
+        I used EJS templating and Bootstrap for a responsive and clean UI, demonstrating my skills in user authentication, RESTful routing, secure file handling with Multer, and PostgreSQL integration.
+      </p>
+      <button onclick="toggleDetails('project-details-photo')" class="try-now-button">See Project Details</button>
+      <div class="project-details" id="project-details-photo" style="display: none;">
+        <p><strong>Project Description:</strong> A secure and private photo-sharing platform for families with authentication, captioning, image deletion, and uploads directly from the camera.</p>
+        <p><strong>Technologies Used:</strong></p>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Node.js, Express.js, EJS</li>
+          <li>PostgreSQL, Multer, bcrypt, Express-session</li>
+          <li>Bootstrap 5 for styling</li>
+        </ul>
+        <a href="https://family-photo-app.onrender.com" target="_blank" class="try-now-button">Try the Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Library Management System</h3>
+      <p>
+        I developed a Library Management System using JavaScript and EJS (Embedded JavaScript) to manage books, users, and borrowing records efficiently. The project includes core functionalities such as adding, editing, and deleting books, user registration, and issuing or returning books. EJS was used to render dynamic web pages, 
+        making the interface interactive and user-friendly. 
+        The system demonstrates my understanding of full-stack web development, 
+        especially in templating, routing, and managing data through forms and server-side logic.
+      </p>
+      <button onclick="toggleDetails('project-details-library')" class="try-now-button">See Project Details</button>
+      <div class="project-details" id="project-details-library" style="display: none;">
+        <p><strong>Project Description:</strong> This web app enables user authentication, session-based access, and secure password storage using a backend database.</p>
+        <p><strong>Technologies Used:</strong></p>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Node.js & Express.js</li>
+        </ul>
+        <a href="https://library-management-system-hsoo.onrender.com" target="_blank" class="try-now-button">Try the Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>QR Code Guest Checker</h3>
+      <p>This app scans guest QR codes to validate if they are invited or not.</p>
+      <button onclick="toggleDetails('project-details-qr')" class="try-now-button">See Project Details</button>
+      <div class="project-details" id="project-details-qr" style="display: none;">
+        <p>The process involves scanning the QR code and verifying if the person is on the guest list. It's an easy and efficient way to check guests at the entrance.</p>
+        <h4>Demo QR Codes</h4>
+        <p>Below are two demo QR codes:</p>
+        <div class="qr-code-container">
+          <div class="qr-code"><img src="images/002_Sarah_Ibrahim.png" alt="Allowed Guest QR Code" /></div>
+          <div class="qr-code"><img src="images/004_John_Doe.png" alt="Not Allowed Guest QR Code" /></div>
+        </div>
+        <p><strong>Scan the demo QR codes above to see how the app handles both allowed and not-allowed guests. If you would like to try the app yourself, click the link below:</strong></p>
+        <a href="https://mabrouukk.github.io/checker/" target="_blank" class="try-now-button">Try the Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>📝 Blog Web Application</h3>
+      <p>This is a front-end web application that simulates a blogging platform where users can create, view, and delete posts. It focuses on layout, user interaction, and responsiveness using only front-end technologies.</p>
+      <button onclick="toggleDetails('project-details-blog')" class="try-now-button">See Project Details</button>
+      <div class="project-details" id="project-details-blog" style="display: none;">
+        <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 1rem;">
+          <img src="./images/Capture 1.PNG" alt="Blog App Homepage Screenshot" style="max-width: 50%; border-radius: 10px;">
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+          <video controls width="75%" style="border-radius: 10px;">
+            <source src="images/here.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>Interactive user interface with post creation and deletion.</li>
+          <li>Styled using HTML, CSS, EJS, Express.js, Node.js, and JavaScript.</li>
+          <li>Fully responsive design optimized for desktop and mobile screens.</li>
+          <li>Data is stored temporarily in-memory during runtime (no database used).</li>
+        </ul>
+        <p><strong>Status:</strong> This project is currently in local development. Demo images and video walkthroughs are available above.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Password Manager</h3>
+      <p>A secure web-based application that allows users to register, log in, and manage their saved passwords for different accounts.</p>
+      <button onclick="toggleDetails('project-details-password-2')" class="try-now-button">See Project Details</button>
+      <div class="project-details" id="project-details-password-2" style="display: none;">
+        <p><strong>Project Description:</strong> This web app enables user authentication, session-based access, and secure password storage using a backend database.</p>
+        <p><strong>Technologies Used:</strong></p>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Node.js & Express.js</li>
+        </ul>
+        <a href="https://mabrouukk.github.io/password-manager/" target="_blank" class="try-now-button">Try the Project</a>
+      </div>
     </div>
   </div>
-</div>
-
-    <div class="container">
-      <h2>🛠 Projects</h2>
-        <div class="project-card">
-        <h3>Library Management System </h3>
-        <p>I developed a Library Management System using JavaScript and EJS (Embedded JavaScript) to manage books, users, and borrowing records efficiently. The project includes core functionalities such as adding, editing, and deleting books, user registration, and issuing or returning books. EJS was used to render dynamic web pages, 
-          making the interface interactive and user-friendly. 
-          The system demonstrates my understanding of full-stack web development, 
-          especially in templating, routing, and managing data through forms and server-side logic.</p>
-        <button onclick="toggleDetails('project-details-password')" class="try-now-button">See Project Details</button>
-        <div class="project-details" id="project-details-password" style="display: none;">
-          <p><strong>Project Description:</strong> This web app enables user authentication, session-based access, and secure password storage using a backend database.</p>
-          <p><strong>Technologies Used:</strong></p>
-          <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Node.js & Express.js</li>
-          </ul>
-          <a href="https://library-management-system-hsoo.onrender.com" target="_blank" class="try-now-button">Try the Project</a>
-        </div>
-      </div>
-
-      
-      <!-- QR Code Guest Checker Project -->
-      <div class="project-card">
-        <h3>QR Code Guest Checker</h3>
-        <p>This app scans guest QR codes to validate if they are invited or not.</p>
-        <button onclick="toggleDetails('project-details-qr')" class="try-now-button">See Project Details</button>
-        <div class="project-details" id="project-details-qr" style="display: none;">
-          <p>The process involves scanning the QR code and verifying if the person is on the guest list. It's an easy and efficient way to check guests at the entrance.</p>
-          <h4>Demo QR Codes</h4>
-          <p>Below are two demo QR codes:</p>
-          <div class="qr-code-container">
-            <div class="qr-code"><img src="images/002_Sarah_Ibrahim.png" alt="Allowed Guest QR Code" /></div>
-            <div class="qr-code"><img src="images/004_John_Doe.png" alt="Not Allowed Guest QR Code" /></div>
-          </div>
-          <p><strong>Scan the demo QR codes above to see how the app handles both allowed and not-allowed guests. If you would like to try the app yourself, click the link below:</strong></p>
-          <a href="https://mabrouukk.github.io/checker/" target="_blank" class="try-now-button">Try the Project</a>
-        </div>
-      </div>
-      
-      <!-- Blog Web Application Project -->
-      <div class="project-card">
-        <h3>📝 Blog Web Application</h3>
-        <p>This is a front-end web application that simulates a blogging platform where users can create, view, and delete posts. It focuses on layout, user interaction, and responsiveness using only front-end technologies.</p>
-        <button onclick="toggleDetails('project-details-blog')" class="try-now-button">See Project Details</button>
-        <div class="project-details" id="project-details-blog" style="display: none;">
-          <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 1rem;">
-            <img src="./images/Capture 1.PNG" alt="Blog App Homepage Screenshot" style="max-width: 50%; border-radius: 10px;">
-          </div>
-          <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
-            <video controls width="75%" style="border-radius: 10px;">
-              <source src="images/here.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <p><strong>Key Features:</strong></p>
-          <ul>
-            <li>Interactive user interface with post creation and deletion.</li>
-            <li>Styled using HTML, CSS,EJS,Express.js,Node.js, and JavaScript.</li>
-            <li>Fully responsive design optimized for desktop and mobile screens.</li>
-            <li>Data is stored temporarily in-memory during runtime (no database used).</li>
-          </ul>
-          <p><strong>Status:</strong> This project is currently in local development. Demo images and video walkthroughs are available above.</p>
-        </div>
-      </div>
-      
-      <!-- Password Manager Project -->
-      <div class="project-card">
-  <h3>Password Manager</h3>
-  <p>A secure web-based application that allows users to register, log in, and manage their saved passwords for different accounts.</p>
-  <button onclick="toggleDetails('project-details-password-2')" class="try-now-button">See Project Details</button>
-  <div class="project-details" id="project-details-password-2" style="display: none;">
-    <p><strong>Project Description:</strong> This web app enables user authentication, session-based access, and secure password storage using a backend database.</p>
-    <p><strong>Technologies Used:</strong></p>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Node.js & Express.js</li>
-    </ul>
-    <a href="https://mabrouukk.github.io/password-manager/" target="_blank" class="try-now-button">Try the Project</a>
-  </div>
-</div>
-
-    </div>
-  </section>
+</section>
 
   <section id="contact">
     <div class="container">
